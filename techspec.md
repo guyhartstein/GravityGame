@@ -121,7 +121,7 @@ var WALL = {
 };
 
 •	Multiplayer functionality
-  o	All games will initialize a secondary player
+If multiplayer is selected from the first pane, the game will be split screen, with both screens showing the same map and they will reflect the movements of players in their own panes.  
 
 var PLAYER2 = {g: 0, 
        s = //sprite source
@@ -132,8 +132,8 @@ var PLAYER2 = {g: 0,
 
 •	Gravity functionality
   o	There are two options for how gravity will work
-    	The entire map flips around and the force of gravity has a sign change
-    	The player flips and the force of gravity has a sign change
+    	The entire map flips around and the force of gravity has a sign change (True for the player's appearance on the opposite side)
+    	The player flips and the force of gravity has a sign change (True for the side the player controls)
 
 In animate.js,function handleGrav(p) is used to handle the force of gravity.  Gravity is handled first, before anything else happens.
 
